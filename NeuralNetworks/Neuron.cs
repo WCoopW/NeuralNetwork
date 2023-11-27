@@ -28,11 +28,11 @@ namespace NeuralNetworks
             {
                 if (NeuronType == NeuronType.Input)
                 {
-                    Weights.Add(1);
+                    Weights.Add(0.1);
                 }
                 else
                 {
-                    Weights.Add(rnd.NextDouble());
+                    Weights.Add(rnd.NextDouble() / 10);
                 }
                 Inputs.Add(0);
             }
